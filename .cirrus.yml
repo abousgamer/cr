@@ -6,7 +6,7 @@ task:
   name: "Builder"
   timeout_in: 120m
   container:
-      image: ghcr.io/sushrut1101/docker:arch
+      image: ghcr.io/catthehacker/ubuntu:act-18.04
       cpu: 8
       memory: 32G
 
