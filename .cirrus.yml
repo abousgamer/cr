@@ -2,12 +2,12 @@ env:
     # Cirrus Specific Vars (Do *NOT* Change)
     SYNC_PATH: $HOME/work # Do NOT use "~". Use $HOME instead.
     CCACHE_SIZE: 30G
-    CCACHE_DIR: $HOME/work/.ccache
+    CCACHE_DIR: $HOME/.ccache
     J_VAL: 16
     CIRRUS_SHELL: bash
 
 task:
-  name: "Build"
+  name: "Build cr"
   timeout_in: 120m
   container:
       image: apon77/aosp:cirrus
