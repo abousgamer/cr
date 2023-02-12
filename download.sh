@@ -10,14 +10,16 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 sudo ln -sf ~/bin/repo /usr/bin/repo
 
-curl -L -o h.deb http://mirrors.kernel.org/ubuntu/pool/main/b/bc/bc_1.07.1-2_amd64.deb
+wget http://mirrors.kernel.org/ubuntu/pool/main/b/bc/bc_1.07.1-2_amd64.deb -O h.deb
 sudo dpkg -i h.deb
 
-curl -L -o l.deb http://mirrors.kernel.org/ubuntu/pool/main/p/popt/libpopt0_1.16-11_amd64.deb
+wget http://mirrors.kernel.org/ubuntu/pool/main/p/popt/libpopt0_1.16-11_amd64.deb -O l.deb
 sudo dpkg -i l.deb
 
-curl -L -o i.deb http://security.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.1.2-2.1ubuntu1.5_amd64.deb
+wget http://security.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.1.2-2.1ubuntu1.5_amd64.deb -O i.deb
 sudo dpkg -i i.deb
+
+sudo apt install bc -y
 
 # set configs.
 git config --global user.email "you@example.com"
