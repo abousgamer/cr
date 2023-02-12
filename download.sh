@@ -10,6 +10,9 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 sudo ln -sf ~/bin/repo /usr/bin/repo
 
+wget http://mirrors.kernel.org/ubuntu/pool/main/r/readline/libreadline7_7.0-3_amd64.deb -O a.deb
+sudo dpkg -i a.deb
+
 wget http://mirrors.kernel.org/ubuntu/pool/main/b/bc/bc_1.07.1-2_amd64.deb -O h.deb
 sudo dpkg -i h.deb
 
