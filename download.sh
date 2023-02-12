@@ -7,6 +7,8 @@ else
     ccache -M ${CCACHE_SIZE}
 fi
 
+sudo apt update -y
+
 sudo apt install libreadline7 libreadline7-dev -y
 
 # set configs.
