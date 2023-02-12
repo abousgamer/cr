@@ -19,6 +19,13 @@ sudo dpkg -i l.deb
 wget http://security.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.1.2-2.1ubuntu1.5_amd64.deb -O i.deb
 sudo dpkg -i i.deb
 
+# Set-up ccache
+if [ -z "$CCACHE_SIZE" ]; then
+    ccache -M 10G
+else
+    ccache -M ${CCACHE_SIZE}
+fi
+
 sudo apt install bc -y
 
 # set configs.
