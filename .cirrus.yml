@@ -7,7 +7,7 @@ env:
     CIRRUS_SHELL: bash
 
 task:
-  name: "Build cr"
+  name: "Build cr-8.0"
   timeout_in: 120m
   container:
       image: apon77/aosp:cirrus
