@@ -9,7 +9,9 @@ fi
 
 sudo apt update -y
 
-sudo apt install libreadline7 libreadline7-dev -y
+sudo apt install bc -y
+
+sudo ln -s /lib/x86_64-linux-gnu/libreadline.so.7 /lib/x86_64-linux-gnu/libreadline.so.8
 
 # set configs.
 git config --global user.email "you@example.com"
